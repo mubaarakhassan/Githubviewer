@@ -1,0 +1,10 @@
+<div>
+  <table>
+    <tbody>
+      <tr ng-repeat="contributor in contributors">
+        <td><a href="" ng-click="search(contributor.login)"> {{contributor.login}} </a> </td>
+        <td> <img src={{contributor.avatar_url}} height="42" width="42"> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
