@@ -1,0 +1,14 @@
+{ 
+   "name": "GithubViewer", 
+   "version": "1.0.0", 
+   "description": "github viewer project.", 
+   "scripts": { 
+     
+      "start": "http-server -a localhost -p 8000"
+   }, 
+   "author": "Mubaarak Hassan", 
+   "license": "ISC", 
+   "devDependencies": { 
+     "lite-server": "^1.3.1" 
+   } 
+}
