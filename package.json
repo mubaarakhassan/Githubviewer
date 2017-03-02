@@ -3,8 +3,8 @@
    "version": "1.0.0", 
    "description": "github viewer project.", 
    "scripts": { 
-     
-      "start": "http-server -a localhost -p 8000"
+     "lite": "lite-server port 10001", 
+     "start": "npm run lite" 
    }, 
    "author": "Mubaarak Hassan", 
    "license": "ISC", 
