@@ -1,6 +1,16 @@
-var http = require('http')
-var port = process.env.PORT || 1337;
-http.createServer(function(req, res) {
-   res.writeHead(200, { 'Content-Type': 'text/plain' });
-   res.end('Hello World\n');
-}).listen(port);
+var http = require("http");
+var app = require("./app");
+
+function start(){
+    function onRequest(request,response){
+        console.log("Request received");
+        response.writeHead(200,{"Content-Type": "text/plain"});
+        response.write(app.start());
+        response.end();
+    }
+
+    http.createServer(onRequest).listen(8888);
+    console.log("Server has started");
+}
+
+exports.start = start;
